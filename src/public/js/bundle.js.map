@@ -1,0 +1,1 @@
+{"version":3,"file":"bundle.js","mappings":";;;;;AAAA,+D","sources":["webpack://projeto-revisao/./src/public/main.js"],"sourcesContent":["document.addEventListener('click', () => console.log('clicou'))"],"names":[],"sourceRoot":""}

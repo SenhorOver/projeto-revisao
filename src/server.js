@@ -14,7 +14,7 @@ app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views'))
 
 //Public files
-app.use(express.static(path.resolve(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, 'public')))
 
 //Routes
 app.use('/', routes)
