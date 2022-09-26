@@ -1,0 +1,14 @@
+header.hrheader{
+    display: flex;
+
+    nav.navbar{
+        ul.menu{
+            list-style: none;
+            display: flex;
+            a{
+                display: block;
+                padding: 15px 25px;
+            }
+        }
+    }
+}

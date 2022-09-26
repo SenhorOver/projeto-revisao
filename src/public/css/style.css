@@ -1,0 +1,11 @@
+header.hrheader {
+  display: flex;
+}
+header.hrheader nav.navbar ul.menu {
+  list-style: none;
+  display: flex;
+}
+header.hrheader nav.navbar ul.menu a {
+  display: block;
+  padding: 15px 25px;
+}
