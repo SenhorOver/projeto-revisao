@@ -1,7 +1,7 @@
 
 
 
-function main(req, res){
+function index(req, res){
     res.render('index', {
         title: 'Home Page'
     })
@@ -13,5 +13,5 @@ function main(req, res){
 
 
 module.exports = {
-    main,
+    index,
 }

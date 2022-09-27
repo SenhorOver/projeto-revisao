@@ -9,6 +9,9 @@ const app = express()
 //Connecting to database
 database.connect()
 
+//Enable recieve data through POST (forms)
+app.use(express.urlencoded({extended: true}))
+
 //ejs template engine
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views'))
