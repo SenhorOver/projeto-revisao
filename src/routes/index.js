@@ -13,4 +13,8 @@ router.post('/register/new', ProductsController.register)
 // List Products Page
 router.get('/list', ProductsController.list)
 
+// Edit Products Page
+router.get('/edit/:id', ProductsController.edit)
+router.post('/edit/new/:id', ProductsController.confirmEdit)
+
 module.exports = router

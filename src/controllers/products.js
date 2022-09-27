@@ -25,15 +25,44 @@ function register(req, res){
 
 async function list(req, res){
     const products = await ProductsModel.find()
+    const {e} = req.query
 
     res.render('list', {
         title: 'Listagem dos Produtos registrados',
-        products
+        products,
+        editado: e
     })
+}
+
+async function edit(req, res){
+    const {id} = req.params
+
+    const product = await ProductsModel.findById(id)
+    res.render('edit', {
+        title: 'Editar Produtos',
+        product,
+    })
+}
+
+async function confirmEdit(req, res){
+    const {id} = req.params
+    const {name, price, stock} = req.body
+
+    const product = await ProductsModel.findById(id)
+
+    product.name = name
+    product.price = price
+    product.stock = stock
+
+    await product.save()
+
+    res.redirect('/list?e=1')
 }
 
 module.exports = {
     index,
     register,
     list,
+    edit,
+    confirmEdit,
 }

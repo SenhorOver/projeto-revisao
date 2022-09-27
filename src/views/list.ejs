@@ -7,9 +7,15 @@
     <%- include('./partials/header.ejs') %>
     <h2 class="lsttitle">Todos os produtos registrados:</h2>
     <br><br>
+    <% if(editado) { %>
+        <span>Editado com sucesso</span>
+    <% } %>
     <ul class="lstProducts">
         <% products.forEach(vl => { %>
-        <li>Nome: <%= vl.name %> - Preço: R$ <%= vl.price.toFixed(2) %> - Quantidade: <%= vl.stock %></li>
+        <li>Nome: <%= vl.name %> - Preço: R$ <%= vl.price.toFixed(2) %> - Quantidade: <%= vl.stock %>
+        - <a href="/edit/<%= vl._id %>">[Editar]</a>
+        - <a href="/remove/<%= vl._id %>">[Excluir]</a>
+        </li>
         <% }) %>
     </ul>
     <%- include('./partials/footer.ejs') %>
