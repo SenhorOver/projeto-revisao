@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head.ejs') %>
+</head>
+<body>
+    <%- include('./partials/header.ejs') %>
+    <h2 class="lstE">
+        Lista de funcionários:
+    </h2>
+
+    <ul class="lstEemployers">
+        <% employers.forEach(vl => { %>
+
+            <li class="lstEemployer">Nome: <%= vl.name %> - Sobrenome: <%= vl.lastname %> - Idade: <%= vl.age %> - Senha: <%= vl.pwd %> 
+            - <a href="">[Editar]</a>
+            - <a href="">[Remover]</a>
+            </li>
+
+        <% }) %>
+    </ul>
+    <%- include('./partials/footer.ejs') %>
+    <%- include('./partials/foot.ejs') %>
+</body>
+</html>
