@@ -13,8 +13,11 @@ router.post('/register/new', ProductsController.register)
 // List Products Page
 router.get('/list', ProductsController.list)
 
-// Edit Products Page
+// Edit Product Page
 router.get('/edit/:id', ProductsController.edit)
 router.post('/edit/new/:id', ProductsController.confirmEdit)
+
+// Remove Product
+router.get('/remove/:id', ProductsController.remove)
 
 module.exports = router

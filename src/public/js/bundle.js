@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "header.hrheader {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding: 0 35px;\n  margin-bottom: 100px;\n  background-color: rgb(250, 126, 126);\n}\nheader.hrheader nav.navbar ul.menu {\n  list-style: none;\n  display: flex;\n  align-items: center;\n}\nheader.hrheader nav.navbar ul.menu li a {\n  display: block;\n  padding: 20px 25px;\n  text-decoration: none;\n  color: black;\n}\nheader.hrheader nav.navbar ul.menu li a:hover {\n  background-color: #aaa;\n  color: white;\n}\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\nbody {\n  font-family: Arial, Helvetica, sans-serif;\n}\n\nfooter.ftfooter {\n  background-color: #aaa;\n  text-align: center;\n  padding: 35px;\n  margin-top: 100px;\n}", "",{"version":3,"sources":["webpack://./src/public/css/style.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,8BAA8B;EAC9B,mBAAmB;EACnB,eAAe;EACf,oBAAoB;EACpB,oCAAoC;AACtC;AACA;EACE,gBAAgB;EAChB,aAAa;EACb,mBAAmB;AACrB;AACA;EACE,cAAc;EACd,kBAAkB;EAClB,qBAAqB;EACrB,YAAY;AACd;AACA;EACE,sBAAsB;EACtB,YAAY;AACd;;AAEA;EACE,SAAS;EACT,UAAU;EACV,sBAAsB;AACxB;;AAEA;EACE,yCAAyC;AAC3C;;AAEA;EACE,sBAAsB;EACtB,kBAAkB;EAClB,aAAa;EACb,iBAAiB;AACnB","sourcesContent":["header.hrheader {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding: 0 35px;\n  margin-bottom: 100px;\n  background-color: rgb(250, 126, 126);\n}\nheader.hrheader nav.navbar ul.menu {\n  list-style: none;\n  display: flex;\n  align-items: center;\n}\nheader.hrheader nav.navbar ul.menu li a {\n  display: block;\n  padding: 20px 25px;\n  text-decoration: none;\n  color: black;\n}\nheader.hrheader nav.navbar ul.menu li a:hover {\n  background-color: #aaa;\n  color: white;\n}\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\nbody {\n  font-family: Arial, Helvetica, sans-serif;\n}\n\nfooter.ftfooter {\n  background-color: #aaa;\n  text-align: center;\n  padding: 35px;\n  margin-top: 100px;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "header.hrheader {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding: 0 35px;\n  margin-bottom: 100px;\n  background-color: rgb(250, 126, 126);\n}\nheader.hrheader nav.navbar ul.menu {\n  list-style: none;\n  display: flex;\n  align-items: center;\n}\nheader.hrheader nav.navbar ul.menu li a {\n  display: block;\n  padding: 20px 25px;\n  text-decoration: none;\n  color: black;\n}\nheader.hrheader nav.navbar ul.menu li a:hover {\n  background-color: #aaa;\n  color: white;\n}\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\nbody {\n  font-family: Arial, Helvetica, sans-serif;\n}\n\nfooter.ftfooter {\n  background-color: #aaa;\n  text-align: center;\n  padding: 35px;\n  margin-top: 100px;\n}\n\n.none {\n  display: none;\n}\n\n.lstLiRemove {\n  position: relative;\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n}\n.lstLiRemove .lstConfirmRemove {\n  width: 200px;\n  position: absolute;\n  right: 0;\n  background-color: white;\n  border: 1px solid red;\n  z-index: 1;\n  text-align: center;\n  padding: 15px 0;\n}\n.lstLiRemove .lstConfirmRemove span {\n  display: block;\n  margin-bottom: 15px;\n}\n.lstLiRemove .lstConfirmRemove button {\n  color: white;\n  cursor: pointer;\n  width: 40%;\n  height: 35px;\n  outline: none;\n}\n.lstLiRemove .lstConfirmRemove a button.lstYes {\n  background-color: red;\n}\n.lstLiRemove .lstConfirmRemove a button.lstYes:active {\n  background-color: rgb(252, 137, 137);\n}\n.lstLiRemove .lstConfirmRemove button.lstNo {\n  background-color: green;\n}\n.lstLiRemove .lstConfirmRemove button.lstNo:active {\n  background-color: rgb(0, 255, 0);\n}/*# sourceMappingURL=style.css.map */", "",{"version":3,"sources":["webpack://./src/public/css/partials/_header.scss","webpack://./src/public/css/style.css","webpack://./src/public/css/partials/_commons.scss","webpack://./src/public/css/partials/_footer.scss","webpack://./src/public/css/partials/_confirmRemove.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,eAAA;EACA,oBAAA;EACA,oCAAA;ACCJ;ADEQ;EACI,gBAAA;EACA,aAAA;EACA,mBAAA;ACAZ;ADEgB;EACI,cAAA;EACA,kBAAA;EACA,qBAAA;EACA,YAAA;ACApB;ADCoB;EACI,sBAAA;EACA,YAAA;ACCxB;;ACtBA;EACI,SAAA;EACA,UAAA;EACA,sBAAA;ADyBJ;;ACtBA;EACI,yCAAA;ADyBJ;;AEhCA;EACI,sBAAA;EACA,kBAAA;EACA,aAAA;EACA,iBAAA;AFmCJ;;AGvCA;EACI,aAAA;AH0CJ;;AGvCA;EACI,kBAAA;EACA,0BAAA;EAAA,uBAAA;EAAA,kBAAA;AH0CJ;AGzCI;EACI,YAAA;EACA,kBAAA;EACA,QAAA;EACA,uBAAA;EACA,qBAAA;EACA,UAAA;EACA,kBAAA;EACA,eAAA;AH2CR;AG1CQ;EACI,cAAA;EACA,mBAAA;AH4CZ;AG1CQ;EACI,YAAA;EACA,eAAA;EACA,UAAA;EACA,YAAA;EACA,aAAA;AH4CZ;AGzCY;EACI,qBAAA;AH2ChB;AG1CgB;EACI,oCAAA;AH4CpB;AGxCQ;EACI,uBAAA;AH0CZ;AGzCY;EACI,gCAAA;AH2ChB,CAAA,oCAAA","sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -528,6 +528,50 @@ function styleTagTransform(css, styleElement) {
 
 module.exports = styleTagTransform;
 
+/***/ }),
+
+/***/ "./src/public/js/partials/rmProduct.js":
+/*!*********************************************!*\
+  !*** ./src/public/js/partials/rmProduct.js ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "lstProductRemove": () => (/* binding */ lstProductRemove)
+/* harmony export */ });
+
+const lstProductRemove = {
+    btnRemove: document.querySelectorAll('.lstARemove'),
+
+    init(){
+        this.bindEvents()
+    }, 
+
+    bindEvents(){
+        this.btnRemove.forEach(vl => {
+            vl.onclick = this.Events.confirmRemove.bind(this)
+        })
+    },
+
+    Events: {
+        confirmRemove(e){
+            e.preventDefault()
+            const confirm = e.target.nextElementSibling
+            confirm.classList.remove('none')
+            confirm.addEventListener('click', event => {
+                const el = event.target
+                if(el.classList.contains('lstNo')){
+                    confirm.classList.add('none')
+                }
+            })
+        }
+    }
+}
+
+
+
+
 /***/ })
 
 /******/ 	});
@@ -611,9 +655,13 @@ var __webpack_exports__ = {};
   \****************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/style.css */ "./src/public/css/style.css");
+/* harmony import */ var _js_partials_rmProduct__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/partials/rmProduct */ "./src/public/js/partials/rmProduct.js");
 
 
-document.addEventListener('click', () => console.log('clicou'))
+
+
+_js_partials_rmProduct__WEBPACK_IMPORTED_MODULE_1__.lstProductRemove.init()
+
 })();
 
 /******/ })()

@@ -26,11 +26,13 @@ function register(req, res){
 async function list(req, res){
     const products = await ProductsModel.find()
     const {e} = req.query
+    const {r} = req.query
 
     res.render('list', {
         title: 'Listagem dos Produtos registrados',
         products,
-        editado: e
+        edited: e,
+        removed: r,
     })
 }
 
@@ -59,10 +61,24 @@ async function confirmEdit(req, res){
     res.redirect('/list?e=1')
 }
 
+async function remove(req, res){
+    const {id} = req.params
+
+    const response = await ProductsModel.deleteOne({_id: id})
+
+    if(response.acknowledged){
+        res.redirect('/list?r=1')
+    } else {
+        res.redirect('/error')
+    }
+
+}
+
 module.exports = {
     index,
     register,
     list,
     edit,
     confirmEdit,
+    remove,
 }
