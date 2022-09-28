@@ -28,6 +28,19 @@ async function register(req, res){
     res.redirect('/registerEmployers?c=1')
 }
 
+async function list(req, res){
+    const {e} = req.query
+    const {r} = req.query
+    const employers = await EmployersModel.find()
+
+    res.render('listEmployers', {
+        title: 'Lista de funcionários',
+        employers,
+        edited: e,
+        removed: r,
+    })
+}
+
 module.exports = {
     index,
     register,

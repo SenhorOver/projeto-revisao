@@ -30,4 +30,7 @@ router.get('/remove/:id', ProductsController.remove)
 router.get('/registerEmployers', EmployersController.index)
 router.post('/registerEmployers/new', EmployersController.register)
 
+// List Employers Page
+router.get('/listEmployers', EmployersController.list)
+
 module.exports = router
