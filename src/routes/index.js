@@ -37,4 +37,7 @@ router.get('/listEmployers', EmployersController.list)
 router.get('/editEmployers/:id', EmployersController.edit)
 router.post('/editEmployers/new/:id', EmployersController.confirmEdit)
 
+// Remove Employers Page
+router.get('/removeEmployers/:id', EmployersController.remove)
+
 module.exports = router

@@ -68,10 +68,21 @@ async function confirmEdit(req, res){
     res.redirect('/listEmployers?e=1')
 }
 
+async function remove(req, res){
+    const {id} = req.params
+
+    const removed = await EmployersModel.deleteOne({_id: id})
+
+    if(removed.acknowledged){
+        res.redirect('/listEmployers?r=1')
+    }
+}
+
 module.exports = {
     index,
     register,
     list,
     edit,
     confirmEdit,
+    remove,
 }
