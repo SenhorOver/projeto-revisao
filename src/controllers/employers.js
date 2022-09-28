@@ -41,8 +41,37 @@ async function list(req, res){
     })
 }
 
+async function edit(req, res){
+    const {id} = req.params
+
+    const employer = await EmployersModel.findById(id)
+
+
+    res.render('editEmployers.ejs', {
+        title: 'Editar informações',
+        employer,
+    })
+}
+
+async function confirmEdit(req, res){
+    const {id} = req.params
+    const {name, lastname, age} = req.body
+
+    const employer = await EmployersModel.findById(id)
+
+    employer.name = name
+    employer.lastname = lastname
+    employer.age = age
+
+    await employer.save()
+
+    res.redirect('/listEmployers?e=1')
+}
+
 module.exports = {
     index,
     register,
     list,
+    edit,
+    confirmEdit,
 }

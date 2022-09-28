@@ -13,7 +13,7 @@
         <% employers.forEach(vl => { %>
 
             <li class="lstEemployer">Nome: <%= vl.name %> - Sobrenome: <%= vl.lastname %> - Idade: <%= vl.age %> - Senha: <%= vl.pwd %> 
-            - <a href="">[Editar]</a>
+            - <a href="/editEmployers/<%= vl._id %>">[Editar]</a>
             - <a href="">[Remover]</a>
             </li>
 

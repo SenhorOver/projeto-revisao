@@ -33,4 +33,8 @@ router.post('/registerEmployers/new', EmployersController.register)
 // List Employers Page
 router.get('/listEmployers', EmployersController.list)
 
+// Edit Employers Page
+router.get('/editEmployers/:id', EmployersController.edit)
+router.post('/editEmployers/new/:id', EmployersController.confirmEdit)
+
 module.exports = router
